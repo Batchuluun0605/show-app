@@ -9,7 +9,7 @@ import Bookmark from "./pages/bookmark";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login />,
+    element: <Home />,
     errorElement: <Error />,
   },
   {
@@ -30,6 +30,11 @@ export const router = createBrowserRouter([
   {
     path: "/bookmarks",
     element: <Bookmark />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
     errorElement: <Error />,
   },
 ]);
